@@ -13,7 +13,7 @@ Once you fire up Terminal or Command Prompt (on Windows, you'll later need to ru
 
 ### What are git and GitHub?
 
-'git' is a command line tool used for version control. What's version control? You know when you've written the first draft of an essay, and as you're saving your second draft you use "Save As" and just tack on "v2" to the name. That's the most basic kind of version control.
+Git is a command line tool used for version control. What's version control? You know when you've written the first draft of an essay, and as you're saving your second draft you use "Save As" and just tack on "v2" to the name. That's the most basic kind of version control.
 
 ![Essay Drafts](images/essay_drafts.png)
 
@@ -26,8 +26,16 @@ Here are some of the basics of git. Anywhere I have brackets ([]), that means yo
 - 'git status' shows the status of the working directory
 - 'git add [file(s)]' adds the respective file(s) to staging (a temporary place for holding until all of the staged files are committed)
 - 'git commit -m ["commit message"]' commits the files in staging (i.e. the staged files are now permanently in your commit tree)
+- 'git hist' shows the commit history
+- 'git revert [hash]' reverts back to the commit whose hash is [hash] 
 
-
+All of the above is Git, a local tool. In order to collaborate with others, you need to put the Git repository on a public server such as GitHub. Here are all of the basics of using Git with GitHub:
 - 'git clone [project-url]' initializes that git repository locally
-- 'git config global user.name ["Your Name"]' sets your name
+- 'git config global user.name ["Your Name"]' sets your name (display with your commits in the commit history)
 - 'git config --global user.email ["your_email@whatever.com"]' sets your GitHub email
+- 'git push' pushes your local changes to GitHub
+- 'git pull' pulls changes on GitHub to your local repository
+
+### Other Git/GitHub resources
+- [Very Comprehensive Tutorial](http://gitimmersion.com)
+- [Git Cheat Sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
